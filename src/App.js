@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './style.css';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useCallback } from 'react';
 
 function App() {
+  /* ------------- PARTICLES JS CONFIG ------------------ */
+  const particlesOptions = {
+    particles: {
+        color: {
+          value: "#E16428",
+        },
+        links: {
+            color: "#E16428",
+            distance: 150,
+            enable: true,
+        },
+        move: {
+            enable: true,
+        },
+        number: {
+            density: {
+                enable: true,
+                area: 800,
+            },
+            value: 50,
+        },
+    },
+  };
+  const particlesInit = useCallback(async engine => {
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
+      // await console.log(container);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Particles
+          className='particles'
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={particlesOptions}
+      />
+    </>
   );
 }
 
