@@ -1,18 +1,25 @@
 // import './App.css';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import './style.css';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from 'react';
+import Navigation from './components/Navigation/Navigation';
+
+// https://colorhunt.co/palette/222831393e46d65a31eeeeee
 
 function App() {
   /* ------------- PARTICLES JS CONFIG ------------------ */
   const particlesOptions = {
     particles: {
         color: {
-          value: "#E16428",
+          value: "#D65A31",
         },
         links: {
-            color: "#E16428",
+            color: "#D65A31",
             distance: 150,
             enable: true,
         },
@@ -44,6 +51,7 @@ function App() {
           loaded={particlesLoaded}
           options={particlesOptions}
       />
+      <Navigation />
     </>
   );
 }

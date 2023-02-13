@@ -1,0 +1,31 @@
+.nav, .dark-bg {
+    background-color: #393E46;
+}
+
+.navbar-brand, .nav-link {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+.offcanvas-title {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+.nav-link {
+    opacity: .7;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #EEEEEE;
+}
+
+.act, .act:hover {
+    color: #D65A31;
+    opacity: 1;
+}
+
+.me-auto {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
