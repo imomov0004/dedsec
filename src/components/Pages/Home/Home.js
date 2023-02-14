@@ -35,6 +35,14 @@ function Home() {
                     </Carousel.Item>
                 </Carousel>
             </section>
+            {/* JOINING SECTION */}
+            <section className="joining-sect">
+                <div className="joining">
+                    <p className="join-us">Join us!</p>
+                    <a href="#Discord" className="button">Discord</a>
+                    <a href="#Calendar" className="button">Calendar</a>
+                </div>
+            </section>
         </div>
     );
 }
