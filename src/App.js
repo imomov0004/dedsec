@@ -8,6 +8,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from 'react';
 import Navigation from './components/Navigation/Navigation';
+import Home from "./components/Pages/Home/Home";
 
 // https://colorhunt.co/palette/222831393e46d65a31eeeeee
 
@@ -42,6 +43,8 @@ function App() {
   const particlesLoaded = useCallback(async container => {
       // await console.log(container);
   }, []);
+
+  /* ------------- RENDERING ------------------ */
   return (
     <>
       <Particles
@@ -52,6 +55,7 @@ function App() {
           options={particlesOptions}
       />
       <Navigation />
+      <Home />
     </>
   );
 }

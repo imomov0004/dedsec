@@ -22,16 +22,16 @@ function Navigation() {
           </Offcanvas.Header>
           <Offcanvas.Body className='dark-bg'>
             <Nav className="me-auto">
-              <Nav.Link href="#home" className='act'><span style={{color:"#D65A31"}}>/</span>Home</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>About</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Alumni</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Education</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Events</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Gallery</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Groups</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Links</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Sponsors</Nav.Link>
-              <Nav.Link href="#link"><span style={{color:"#D65A31"}}>/</span>Blog</Nav.Link>
+              <Nav.Link href="#home"><span style={{color:"#D65A31"}}>/</span>Home</Nav.Link>
+              <Nav.Link href="#about"><span style={{color:"#D65A31"}}>/</span>About</Nav.Link>
+              <Nav.Link href="#alumni"><span style={{color:"#D65A31"}}>/</span>Alumni</Nav.Link>
+              <Nav.Link href="#education"><span style={{color:"#D65A31"}}>/</span>Education</Nav.Link>
+              <Nav.Link href="#events"><span style={{color:"#D65A31"}}>/</span>Events</Nav.Link>
+              <Nav.Link href="#gallery"><span style={{color:"#D65A31"}}>/</span>Gallery</Nav.Link>
+              <Nav.Link href="#groups"><span style={{color:"#D65A31"}}>/</span>Groups</Nav.Link>
+              <Nav.Link href="#links"><span style={{color:"#D65A31"}}>/</span>Links</Nav.Link>
+              <Nav.Link href="#sponsors"><span style={{color:"#D65A31"}}>/</span>Sponsors</Nav.Link>
+              <Nav.Link href="#blog"><span style={{color:"#D65A31"}}>/</span>Blog</Nav.Link>
             </Nav>
         </Offcanvas.Body>
         </Navbar.Offcanvas>

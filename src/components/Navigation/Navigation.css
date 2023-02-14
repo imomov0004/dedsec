@@ -6,6 +6,9 @@
     color: #EEEEEE;
     font-weight: bold;
 }
+.navbar-brand:hover {
+    color: #EEEEEE;
+}
 .offcanvas-title {
     color: #EEEEEE;
     font-weight: bold;
@@ -19,7 +22,7 @@
     color: #EEEEEE;
 }
 
-.act, .act:hover {
+.nav-link.active, .nav-link.active:hover, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: #D65A31;
     opacity: 1;
 }
@@ -28,4 +31,8 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
+}
+
+@media screen {
+    
 }
